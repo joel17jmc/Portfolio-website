@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <title>About Me</title>  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+    body{
+      background-color: rgb(35, 7, 53);
+      color: rgb(222, 224, 226);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+    
+    nav{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(118, 64, 211);
+    }
+    nav ul{
+      display:flex;
+      justify-content: center;
+    }
+    nav ul li {
+      color: aliceblue;
+     list-style:none;
+      margin: 0 23px;
+    }
+    nav ul li a{
+      color: white;
+      text-decoration: none;
+      
+    }
+      
+    nav ul li a:hover{
+      color: coral;
+      font-size:2rem;
+    }
+    .box1 {
+      margin: 0px 445px;
+      width: 40%;
+      height: auto;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover,
+    input[type=reset]:hover {
+      background-color: #45a049;
+    }       
+    </style >
+  </head>
+<body>
+    <h1 style="margin:80px 0; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">Contact Me</h1>
+    <main>
+      <div class="box1">
+          <form action="  https://formspree.io/f/mblkndee" method="POST">
+          <label for="fname">First Name</label><br>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+          <label for="lname">Last Name</label><br>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+          <label for="country">Country</label><br>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="uk">UK</option>
+            <option value="other">Other</option>
+          </select><br>
+          <label for="subject">Subject</label><br>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+          <label for="pn">Phone:</labebl>
+          <input type="tel" id="pn" name="phonenumber" placeholder="Your phone number.."><br>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset"><br>
+        </form>
+      </div>    
+    </main>
+</body> 
+</html>
